@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+li {
+  list-style: none;
+}
+.social-media a {
+  color: #fff;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+.modal {
+  --bs-modal-width: 70%;
+  background-color: rgba(129, 128, 128, 0.4);
+}
+.modal-content {
+  margin-top: 6rem;
+}
+.modal-header {
+  border: none;
+}
