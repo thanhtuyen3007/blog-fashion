@@ -58,12 +58,17 @@ li {
 .btn__interact .btn {
   border-radius: 0;
 }
-.btn__interact .btn span {
-  background-color: #fff;
-  color: #333;
-  padding: 0.1rem 0.5rem;
+.btn__interact__like.active {
+  background-color: #333;
+  color: #fff;
 }
 .blog__replies {
+  display: none;
+}
+.blog__replies.active {
+  display: block;
+}
+.blog__replies__item {
   display: flex;
   padding-top: 2rem;
   margin-top: 2rem;
@@ -84,4 +89,20 @@ li {
 }
 .blog__replies__content-grey {
   color: #999797;
+}
+/* menu */
+.menuTag {
+  margin-bottom: 3rem;
+}
+.menuTag__title {
+  background-color: black;
+  color: #fff;
+  padding: 0.9rem;
+}
+.menuTag__title h5 {
+  text-transform: capitalize;
+  margin: 0;
+}
+.menuTag__content {
+  background-color: #fff;
 }

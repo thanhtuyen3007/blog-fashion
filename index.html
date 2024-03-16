@@ -122,25 +122,32 @@
             <button
               type="button"
               class="btn__interact__like btn btn-outline-dark"
+              onclick="liked(this)"
             >
               <i class="fa-regular fa-thumbs-up"></i>Like
             </button>
-            <button type="button" class="replies btn btn-dark">
+            <button
+              type="button"
+              class="replies btn btn-outline-dark"
+              onclick="showReplies()"
+            >
               Replies <span>1</span>
             </button>
           </div>
           <div class="blog__replies">
-            <div class="blog__replies__avatar">
-              <img src="./assets/images/avatar/avatar_smoke.jpg" alt="" />
-            </div>
-            <div class="blog__replies__content">
-              <h6>
-                George
-                <span class="blog__replies__content-grey">
-                  May 3, 2015, 6:32 PM</span
-                >
-              </h6>
-              <span>Great blog post! Following</span>
+            <div class="blog__replies__item">
+              <div class="blog__replies__avatar">
+                <img src="./assets/images/avatar/avatar_smoke.jpg" alt="" />
+              </div>
+              <div class="blog__replies__content">
+                <h6>
+                  George
+                  <span class="blog__replies__content-grey">
+                    May 3, 2015, 6:32 PM</span
+                  >
+                </h6>
+                <span>Great blog post! Following</span>
+              </div>
             </div>
           </div>
         </section>
@@ -175,40 +182,46 @@
             >
               <i class="fa-regular fa-thumbs-up"></i>Like
             </button>
-            <button type="button" class="replies btn btn-dark">
+            <button
+              type="button"
+              class="replies btn btn-outline-dark"
+              onclick="showReplies()"
+            >
               Replies <span>2</span>
             </button>
           </div>
           <div class="blog__replies">
-            <div class="blog__replies__avatar">
-              <img src="./assets/images/avatar/girl.jpg" alt="" />
+            <div class="blog__replies__item">
+              <div class="blog__replies__avatar">
+                <img src="./assets/images/avatar/girl.jpg" alt="" />
+              </div>
+              <div class="blog__replies__content">
+                <h6>
+                  Angie
+                  <span class="blog__replies__content-grey">
+                    May 3, 2015, 6:32 PM</span
+                  >
+                </h6>
+                <span>Love hats!!</span>
+              </div>
             </div>
-            <div class="blog__replies__content">
-              <h6>
-                Angie
-                <span class="blog__replies__content-grey">
-                  May 3, 2015, 6:32 PM</span
+            <div class="blog__replies__item">
+              <div class="blog__replies__avatar">
+                <img src="./assets/images/avatar/girl_train.jpg" alt="" />
+              </div>
+              <div class="blog__replies__content">
+                <h6>
+                  Amber
+                  <span class="blog__replies__content-grey">
+                    April 26, 2015, 10:52 PM</span
+                  >
+                </h6>
+                <span
+                  >GLove your blog page! Simply the best! Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</span
                 >
-              </h6>
-              <span>Love hats!!</span>
-            </div>
-          </div>
-          <div class="blog__replies">
-            <div class="blog__replies__avatar">
-              <img src="./assets/images/avatar/girl_train.jpg" alt="" />
-            </div>
-            <div class="blog__replies__content">
-              <h6>
-                Amber
-                <span class="blog__replies__content-grey">
-                  April 26, 2015, 10:52 PM</span
-                >
-              </h6>
-              <span
-                >GLove your blog page! Simply the best! Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</span
-              >
+              </div>
             </div>
           </div>
         </section>
@@ -244,42 +257,214 @@
             >
               <i class="fa-regular fa-thumbs-up"></i>Like
             </button>
-            <button type="button" class="replies btn btn-dark">
+            <button
+              type="button"
+              class="replies btn btn-outline-dark"
+              onclick="showReplies()"
+            >
               Replies <span>2</span>
             </button>
           </div>
           <div class="blog__replies">
-            <div class="blog__replies__avatar">
-              <img src="./assets/images/avatar/girl_mountain.jpg" alt="" />
-            </div>
-            <div class="blog__replies__content">
-              <h6>
-                Jane
-                <span class="blog__replies__content-grey">
-                  April 10, 2015, 7:22 PM</span
+            <div class="blog__replies__item">
+              <div class="blog__replies__avatar">
+                <img src="./assets/images/avatar/girl_mountain.jpg" alt="" />
+              </div>
+              <div class="blog__replies__content">
+                <h6>
+                  Jane
+                  <span class="blog__replies__content-grey">
+                    April 10, 2015, 7:22 PM</span
+                  >
+                </h6>
+                <span
+                  >That was a great runway show! Thanks for everything.</span
                 >
-              </h6>
-              <span>That was a great runway show! Thanks for everything.</span>
+              </div>
             </div>
-          </div>
-          <div class="blog__replies">
-            <div class="blog__replies__avatar">
-              <img src="./assets/images/avatar/boy.jpg" alt="" />
-            </div>
-            <div class="blog__replies__content">
-              <h6>
-                John
-                <span class="blog__replies__content-grey">
-                  April 8, 2015, 10:32 PM</span
-                >
-              </h6>
-              <span>Cant wait for the runway to start!</span>
+            <div class="blog__replies__item">
+              <div class="blog__replies__avatar">
+                <img src="./assets/images/avatar/boy.jpg" alt="" />
+              </div>
+              <div class="blog__replies__content">
+                <h6>
+                  John
+                  <span class="blog__replies__content-grey">
+                    April 8, 2015, 10:32 PM</span
+                  >
+                </h6>
+                <span>Cant wait for the runway to start!</span>
+              </div>
             </div>
           </div>
         </section>
       </div>
       <!-- Auto/Information menu -->
-      <div class="col-md-3 col-12">menu</div>
+      <div class="col-md-4 col-12 mt-5">
+        <!-- about card -->
+        <section class="card mb-5">
+          <img
+            src="./assets/images/avatar_card.jpg"
+            alt="card"
+            style="width: 100%"
+          />
+          <div class="conten bg-black text-white p-2 fs-8 lh-4">
+            <h5 class="text-capitalize">my name</h5>
+            <p>
+              Just me, myself and I, exploring the universe of uknownment. I
+              have a heart of love and a interest of lorem ipsum and mauris
+              neque quam blog. I want to share my world with you.
+            </p>
+          </div>
+        </section>
+        <!-- Popular Posts -->
+        <section class="menuTag">
+          <div class="menuTag__title">
+            <h5>Popular Posts</h5>
+          </div>
+          <div class="menuTag__content">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="card border-0">
+                  <div class="row g-0">
+                    <div class="col-md-2">
+                      <img
+                        src="./assets/images/avatar/avatar_smoke.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h7 class="card-title text-capitalize">denmin</h7>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Sed mattis nunc</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="card border-0">
+                  <div class="row g-0">
+                    <div class="col-md-2">
+                      <img
+                        src="./assets/images/avatar/workshop.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h7 class="card-title text-capitalize">Workshop</h7>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Ultricies congue</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="card border-0">
+                  <div class="row g-0">
+                    <div class="col-md-2">
+                      <img
+                        src="./assets/images/avatar/bandmember.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h7 class="card-title text-capitalize">Sweaters</h7>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Praes tinci sed
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="card border-0">
+                  <div class="row g-0">
+                    <div class="col-md-2">
+                      <img
+                        src="./assets/images/avatar/girl_train.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h7 class="card-title text-capitalize">Trends</h7>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Lorem ipsum dipsum
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Advertise -->
+        <section class="menuTag">
+          <div class="menuTag__title">
+            <h5>Advertise</h5>
+          </div>
+          <div class="menuTag__content text-center">
+            <span>your AD here</span>
+          </div>
+        </section>
+        <!-- Tags -->
+        <section class="menuTag">
+          <div class="menuTag__title">
+            <h5>tags</h5>
+          </div>
+          <div class="menuTag__content text-center">
+            <span>your AD here</span>
+          </div>
+        </section>
+        <!-- Inspiration -->
+        <section class="menuTag">
+          <div class="menuTag__title">
+            <h5>Inspiration</h5>
+          </div>
+          <div class="menuTag__content text-center">
+            <span>your AD here</span>
+          </div>
+        </section>
+        <!-- follow me -->
+        <section class="menuTag">
+          <div class="menuTag__title">
+            <h5>follow me</h5>
+          </div>
+          <div class="menuTag__content text-center">
+            <span>your AD here</span>
+          </div>
+        </section>
+        <!-- Subscribe -->
+        <section class="menuTag">
+          <div class="menuTag__title">
+            <h5>Subscribe</h5>
+          </div>
+          <div class="menuTag__content text-center">
+            <span>your AD here</span>
+          </div>
+        </section>
+      </div>
     </main>
     <section id="subscribe" class="modal">
       <div class="modal-dialog">
@@ -316,7 +501,17 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer class="container-fluid text-bg-secondary text-center py-5">
+      <div class="btnToTop py-3">
+        <a href="#" class="btn btn-dark rounded-0"
+          ><i class="fa-solid fa-arrow-up"></i> To the top</a
+        >
+      </div>
+      <span
+        >Powered by
+        <a class="text-white" href="https://www.w3schools.com/">w3.css</a></span
+      >
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
