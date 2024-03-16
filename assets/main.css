@@ -24,3 +24,64 @@ li {
 .modal-header {
   border: none;
 }
+.blog {
+  background-color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.blog__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.blog__desc {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.blog__day {
+  text-transform: capitalize;
+  color: #999797;
+}
+.blog__image {
+  width: 100%;
+}
+.blog__text {
+  margin-top: 1.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+.btn__interact {
+  display: flex;
+  justify-content: space-between;
+}
+.btn__interact .btn {
+  border-radius: 0;
+}
+.btn__interact .btn span {
+  background-color: #fff;
+  color: #333;
+  padding: 0.1rem 0.5rem;
+}
+.blog__replies {
+  display: flex;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+.blog__replies__avatar {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+.blog__replies__avatar img {
+  width: 100%;
+}
+.blog__replies__content {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+  padding-left: 1rem;
+}
+.blog__replies__content-grey {
+  color: #999797;
+}
