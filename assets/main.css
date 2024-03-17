@@ -92,6 +92,7 @@ li {
 }
 /* menu */
 .menuTag {
+  width: 100%;
   margin-bottom: 3rem;
 }
 .menuTag__title {
@@ -104,5 +105,33 @@ li {
   margin: 0;
 }
 .menuTag__content {
+  width: 100%;
+  margin: 0 auto;
   background-color: #fff;
+  padding: 1rem;
+}
+.menuTag__content a {
+  text-decoration: none;
+}
+.menuTag__content__item {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 0 0.5rem;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 0.9rem;
+  margin-right: 0.5rem;
+}
+.menuTag__content__item:hover {
+  color: #fff;
+  background-color: #000;
+  transform: scale(1.1);
+}
+.menuTag__social a {
+  color: #000;
+  font-size: 1.5rem;
+}
+.menuTag__social a:hover {
+  color: #000;
+  transform: scale(1.1);
 }

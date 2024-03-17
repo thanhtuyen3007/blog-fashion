@@ -73,7 +73,9 @@
     </header>
     <header class="container-fluid position-relative" id="home">
       <img src="./assets/images/jane.jpg" alt="jane.jpg" style="width: 100%" />
-      <div class="content text-white p-5 position-absolute top-50 start-0">
+      <div
+        class="content d-md-block d-none text-white p-5 position-absolute top-50 start-0"
+      >
         <h3 class="text-capitalize">jane's</h3>
         <h1 class="py-3" style="font-size: 3.5rem; font-weight: 700">
           FASHION BLOG
@@ -433,8 +435,46 @@
           <div class="menuTag__title">
             <h5>tags</h5>
           </div>
-          <div class="menuTag__content text-center">
-            <span>your AD here</span>
+          <div class="menuTag__content">
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">fashion</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">paris</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">new york</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">milan</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">seoul</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">hat</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">deals</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">news</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">clothing</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">sweaters</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">ideas</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">jean</span></a
+            >
+            <a href="" type="button" onclick="activeTags(this)"
+              ><span class="menuTag__content__item">shopping</span></a
+            >
           </div>
         </section>
         <!-- Inspiration -->
@@ -442,8 +482,35 @@
           <div class="menuTag__title">
             <h5>Inspiration</h5>
           </div>
-          <div class="menuTag__content text-center">
-            <span>your AD here</span>
+          <div class="menuTag__content row">
+            <div class="col-lg-6 col-12">
+              <img
+                class="mb-2"
+                src="./assets/images/avatar/jeans.jpg"
+                alt=""
+                style="width: 100%"
+              />
+              <img
+                class="mb-2"
+                src="./assets/images/avatar/team4.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="col-lg-6 col-12">
+              <img
+                class="mb-2"
+                src="./assets/images/avatar/team1.jpg"
+                alt=""
+                style="width: 100%"
+              />
+              <img
+                class="mb-2"
+                src="./assets/images/avatar/avatar_hat.jpg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
           </div>
         </section>
         <!-- follow me -->
@@ -451,8 +518,39 @@
           <div class="menuTag__title">
             <h5>follow me</h5>
           </div>
-          <div class="menuTag__content text-center">
-            <span>your AD here</span>
+          <div class="menuTag__content">
+            <ul class="menuTag__social nav d-flex">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         <!-- Subscribe -->
@@ -460,8 +558,23 @@
           <div class="menuTag__title">
             <h5>Subscribe</h5>
           </div>
-          <div class="menuTag__content text-center">
-            <span>your AD here</span>
+          <div class="menuTag__content">
+            <span
+              >Enter your e-mail below and get notified on the latest blog
+              posts.
+            </span>
+            <input
+              class="d-block my-3 p-2"
+              style="width: 100%; height: 2.5rem"
+              type="email"
+              placeholder="Enter email"
+            />
+            <button
+              class="btn btn-danger rounded-0"
+              style="width: 100%; height: 2.5rem"
+            >
+              Submit
+            </button>
           </div>
         </section>
       </div>
@@ -491,7 +604,7 @@
               placeholder="Enter email"
             />
             <button
-              class="btn btn-danger"
+              class="btn btn-danger rounded-0"
               style="width: 100%; height: 3rem"
               onclick="hideModal()"
             >
