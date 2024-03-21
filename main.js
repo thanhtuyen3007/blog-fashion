@@ -6,11 +6,14 @@ function hideModal() {
   myModal.style.display = "none";
 }
 // Toggle between hiding and showing blog replies/comments
-function showReplies(x) {
-  const blogReplies = document.querySelectorAll(".blog__replies");
-  [...blogReplies].map((blogReplieItem, index) => {
-    blogReplieItem.classList.toggle("active");
-  });
+function showReplies() {
+  const btnShowReplies = document.querySelectorAll(".replies");
+  for (var i = 0; i < btnShowReplies.length; i++) {
+    btnShowReplies[i].onclick = function (e) {
+      const blogReplie = this.parentElement.nextElementSibling;
+      blogReplie.classList.toggle("active");
+    };
+  }
 }
 function liked(x) {
   x.classList.toggle("active");
